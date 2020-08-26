@@ -15,7 +15,7 @@ namespace ApiCliente.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-6IBDL1T\SQLEXPRESS;Database=ApiClientes;Trusted_Connection=True");
+            optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=ApiClientes;Trusted_Connection=True");
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
